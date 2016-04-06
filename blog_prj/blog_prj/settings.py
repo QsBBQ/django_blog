@@ -15,6 +15,8 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
@@ -37,8 +39,12 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog'
+    'django.contrib.sites',
+    'blog',
+    'disqus',
 )
+DISQUS_API_KEY = "k9DTzB0kgXascrW6MGSrCl5VhI9ZNoSzIHjaNeEuhfuMbCUDVECpeAarQkxK3O8K"
+DISQUS_WEBSITE_SHORTNAME = "mybootcampblog"
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
