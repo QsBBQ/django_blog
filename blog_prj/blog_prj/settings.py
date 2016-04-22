@@ -43,6 +43,7 @@ INSTALLED_APPS = (
     'blog',
     'disqus',
     'django_extensions',
+    'django_forms_bootstrap',
 )
 DISQUS_API_KEY = "k9DTzB0kgXascrW6MGSrCl5VhI9ZNoSzIHjaNeEuhfuMbCUDVECpeAarQkxK3O8K"
 DISQUS_WEBSITE_SHORTNAME = "mybootcampblog"

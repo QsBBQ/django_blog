@@ -7,6 +7,21 @@ cerulean/bootstrap.min.css">
     <link rel="stylesheet" href="{% static "css/blog.css" %}">
 </head>
 <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/blog">Blog</a>
+            </div>
+            <div id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/blog">Blog</a></li>
+                    <li><a href="/post/new/">New Post</a></li>
+                    <li><a href="/blog/top5/">Top5</a></li>
+                    <li><a href="/category">Category</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
 <div id="masthead">
     <div class="container">
         <div class="row">
